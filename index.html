@@ -5,11 +5,12 @@
   <meta charset="utf-8">
   <title>Techspark</title>
   <link rel="stylesheet" href="C:\Users\ManujHazarika\Documents\HTML-CSS-ESS\Techspark\styles.css">
+  <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/creative-design-honey-vol-2/64/TECHNICAL_THINKING-256.png">
 </head>
 
 <body>
   <!-- header start -->
-  <div class="header">
+  <div class="header" id="header">
     <div class="container nav_container">
       <div class="logo">
         Techspark
@@ -227,6 +228,19 @@
     </div>
 
   </footer>
+  <script>
+
+    window.onscroll=function(){
+      // console.log("scroll working");
+      if(window.pageYOffset>50){
+        document.getElementById('header').style.backgroundColor="#397cec";
+      }
+      else {
+        document.getElementById('header').style.backgroundColor="transparent";
+      }
+    }
+  </script>
+
 </body>
 
 </html>
